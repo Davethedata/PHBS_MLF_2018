@@ -7,8 +7,8 @@ If a firm can't afford its debt and return the money borrowed from its investors
 ### Data Source
 https://archive.ics.uci.edu/ml/datasets/Polish+companies+bankruptcy+data#（UCI）
 ### Data Information
-This is a classification problem so that the dependent variable is a binary variable.Class "1" represents the bankrupt company.We have 64 independent variables deriving from financial statement.The indenpedent variables are listed as follow:
-
+This dataset have 5 files and they are different from each other in the starting forecasting years.For example,"1st Year.csv" contains financial rates from 1st year of the forecasting period and corresponding class label that indicates bankruptcy status after 5 years. The data contains 7027 instances (financial statements), 271 represents bankrupted companies, 6756 firms that did not bankrupt in the forecasting period.   
+This is a classification problem so that the dependent variable is a binary variable.Class "1" represents the bankrupt company.We have 64 independent variables deriving from financial statement.The indenpedent variables are listed as follow:  
 X1	net profit / total assets  
 X2	total liabilities / total assets  
 X3	working capital / total assets   
