@@ -10,6 +10,7 @@ https://archive.ics.uci.edu/ml/datasets/Polish+companies+bankruptcy+data#ï¼ˆUCIï
 This is a classification problem so that the dependent variable is a binary variable.Class "1" represents the bankrupt company.We have 64 independent variables deriving from financial statement.The indenpedent variables are listed as follow:
 
 X1	net profit / total assets 
+
 X2	total liabilities / total assets 
 X3	working capital / total assets 
 X4	current assets / short-term liabilities 
