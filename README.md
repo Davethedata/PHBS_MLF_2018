@@ -5,10 +5,11 @@ Chenfeng Yu 1701213143
 If a firm can't afford its debt and return the money borrowed from its investors, the firm may claim a bankruptcy.A bankruptcy results from a bunch of reasons.Intuitively, a common situation is where a firm's revenue can't cover its cost of goods.Moreover, there are a lot of problems coming from capital structure,management,marketing,etc.In this project,I will detect the influence of financial ratios in financial statement on a firm's bankruptcy. 
 ## Data Description
 ### Data Source
-https://archive.ics.uci.edu/ml/datasets/Polish+companies+bankruptcy+data#（UCI）
+https://archive.ics.uci.edu/ml/datasets/Polish+companies+bankruptcy+data#   （UCI）
 ### Data Information
 This dataset have 5 files and they are different from each other in the starting forecasting years.For example,"1st Year.csv" contains financial rates from 1st year of the forecasting period and corresponding class label that indicates bankruptcy status after 5 years. The data contains 7027 instances (financial statements), 271 represents bankrupted companies, 6756 firms that did not bankrupt in the forecasting period.   
 This is a classification problem so that the dependent variable is a binary variable.Class "1" represents the bankrupt company.We have 64 independent variables deriving from financial statement.The indenpedent variables are listed as follow:  
+
 X1	net profit / total assets  
 X2	total liabilities / total assets  
 X3	working capital / total assets   
