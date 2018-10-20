@@ -74,3 +74,6 @@ X61	sales / receivables
 X62	(short-term liabilities *365) / sales   
 X63	sales / short-term liabilities   
 X64	sales / fixed assets  
+
+## Reference
+Zieba, M., Tomczak, S. K., & Tomczak, J. M. (2016). Ensemble Boosted Trees with Synthetic Features Generation in Application to Bankruptcy Prediction. Expert Systems with Applications.
