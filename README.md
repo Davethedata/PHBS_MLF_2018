@@ -80,16 +80,16 @@ X64	sales / fixed assets
    64 independent variables have different influence on firm's bankruptcy.I want to detect the importance of each variable.
    
 ### Selection Method
-   *Pearson Correlation(Univariate feature selection,Based on F-statistic)
-   *Logistic model and regularization(Based on the absolute value of coefficients)  
-   *Random Forest feature importance(Based on mean decrease impurity)  
-   *Recursive feature elimination (RFE)
+   * Pearson Correlation(Univariate feature selection,Based on F-statistic)
+   * Logistic model and regularization(Based on the absolute value of coefficients)  
+   * Random Forest feature importance(Based on mean decrease impurity)  
+   * Recursive feature elimination (RFE)
 
 I run each method and get the rank of each variable respectively.Then I calculate the average rank for all indenpendent variables.
 
 ## Main Result
 
-*First Year(Forcasting bankruptcy after 5 years)  
+* First Year(Forecasting bankruptcy after 5 years)  
 
 NO|Mean rank|Factor|Factor Name
 |---|:---:|:--:|:---:|
@@ -104,7 +104,7 @@ NO|Mean rank|Factor|Factor Name
 9|21.4|X11|(gross profit + extraordinary items + financial expenses) / total assets   
 10|22.0|X6|retained earnings / total assets  
 
-*Second Year(Forcasting bankruptcy after 4 years)  
+* Second Year(Forecasting bankruptcy after 4 years)  
 
 NO|Mean rank|Factor|Factor Name
 |---|:---:|:--:|:---:|
@@ -119,7 +119,7 @@ NO|Mean rank|Factor|Factor Name
 9|23.6|x53|equity / fixed assets 
 10|23.8|X34|operating expenses / total liabilities  
 
-*Third Year(Forcasting bankruptcy after 3 years)  
+* Third Year(Forecasting bankruptcy after 3 years)  
 
 NO|Mean rank|Factor|Factor Name
 |---|:---:|:--:|:---:|
@@ -134,7 +134,7 @@ NO|Mean rank|Factor|Factor Name
 9|21.2|X51|sales / total assets   
 10|21.8|X38|constant capital / total assets  
 
-*Forth Year(Forcasting bankruptcy after 2 years)  
+* Forth Year(Forecasting bankruptcy after 2 years)  
 
 NO|Mean rank|Factor|Factor Name
 |---|:---:|:--:|:---:|
@@ -149,7 +149,7 @@ NO|Mean rank|Factor|Factor Name
 9|25.4|X56|(sales - cost of products sold) / sales  
 10|25.6|X26|(net profit + depreciation) / total liabilities  
 
-*Fifth Year(Forcasting bankruptcy after 1 years)  
+* Fifth Year(Forecasting bankruptcy after 1 years)  
 
 NO|Mean rank|Factor|Factor Name
 |---|:---:|:--:|:---:|
@@ -164,6 +164,12 @@ NO|Mean rank|Factor|Factor Name
 9|24.4|X41|total liabilities / ((profit on operating activities + depreciation) * (12/365)) 
 10|24.6|X25|(equity - share capital) / total assets  
 
-
+   * Total asset are the most important feature  
+   * Sales starts to show significance from second year
+   * short-term liabilities are important in predicting a short-time bankruptcy  
+   
+## Shortcomings
+   * Ranking is a relative value rather than an absolute value.This model might ignore some variables which have an unique predicting power on some special forecasting years  
+   
 ## Reference
 Zieba, M., Tomczak, S. K., & Tomczak, J. M. (2016). Ensemble Boosted Trees with Synthetic Features Generation in Application to Bankruptcy Prediction. Expert Systems with Applications.
