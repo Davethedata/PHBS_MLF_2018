@@ -1,4 +1,4 @@
-# What lead to the bankruptcy of a firm?
+# Do previous financial information affect 
 ## Team Members
 Chenfeng Yu 1701213143
 ## Project Goal
