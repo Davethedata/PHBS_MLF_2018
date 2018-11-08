@@ -75,5 +75,30 @@ X62	(short-term liabilities *365) / sales
 X63	sales / short-term liabilities   
 X64	sales / fixed assets  
 
+## Features Selection(importance)
+   
+   64 independent variables have different influence on firm's bankruptcy.I want to detect the importance of each variable.
+   
+### Selection Method
+   *Pearson Correlation(Univariate feature selection,Based on F-statistic)
+   *Logistic model and regularization(Based on the absolute value of coefficients)  
+   *Random Forest feature importance(Based on mean decrease impurity)  
+   *Recursive feature elimination (RFE)
+
+I run each method and get the rank of each variable respectively.Then I calculate the average rank for all indenpendent variables.
+
+## Main Result
+NO|Mean rank|Factor|Factor Name
+1|12.6|X29|logarithm of total assets  
+2|16.4|X34|operating expenses / total liabilities  
+3|17.0|X18|gross profit / total assets 
+4|17.6|X38|constant capital / total assets
+5|17.6|X7|EBIT / total assets
+6|19.0|X14|(gross profit + interest) / total assets
+7|20.4|X9|sales / total assets 
+8|20.8|X3|working capital / total assets 
+9|21.4|X11|(gross profit + extraordinary items + financial expenses) / total assets   
+10|22.0|X6|retained earnings / total assets  
+
 ## Reference
 Zieba, M., Tomczak, S. K., & Tomczak, J. M. (2016). Ensemble Boosted Trees with Synthetic Features Generation in Application to Bankruptcy Prediction. Expert Systems with Applications.
