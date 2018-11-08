@@ -89,6 +89,7 @@ I run each method and get the rank of each variable respectively.Then I calculat
 
 ## Main Result
 NO|Mean rank|Factor|Factor Name
+|---|:---:|:--|---:|
 1|12.6|X29|logarithm of total assets  
 2|16.4|X34|operating expenses / total liabilities  
 3|17.0|X18|gross profit / total assets 
