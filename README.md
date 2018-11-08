@@ -88,8 +88,11 @@ X64	sales / fixed assets
 I run each method and get the rank of each variable respectively.Then I calculate the average rank for all indenpendent variables.
 
 ## Main Result
+
+*First Year(Forcasting bankruptcy after 5 years)  
+
 NO|Mean rank|Factor|Factor Name
-|---|:---:|:--|---:|
+|---|:---:|:--:|:---:|
 1|12.6|X29|logarithm of total assets  
 2|16.4|X34|operating expenses / total liabilities  
 3|17.0|X18|gross profit / total assets 
@@ -100,6 +103,67 @@ NO|Mean rank|Factor|Factor Name
 8|20.8|X3|working capital / total assets 
 9|21.4|X11|(gross profit + extraordinary items + financial expenses) / total assets   
 10|22.0|X6|retained earnings / total assets  
+
+*Second Year(Forcasting bankruptcy after 4 years)  
+
+NO|Mean rank|Factor|Factor Name
+|---|:---:|:--:|:---:|
+1|15.6|X29|logarithm of total assets  
+2|15.8|X58|total costs /total sales   
+3|17.2|X54|constant capital / fixed assets 
+4|19.4|X20|(inventory * 365) / sales 
+5|19.4|X46|(current assets - inventory) / short-term liabilities
+6|20.8|X44|(receivables * 365) / sales 
+7|21.6|X33|operating expenses / short-term liabilities
+8|23.2|x24|gross profit (in 3 years) / total assets
+9|23.6|x53|equity / fixed assets 
+10|23.8|X34|operating expenses / total liabilities  
+
+*Third Year(Forcasting bankruptcy after 3 years)  
+
+NO|Mean rank|Factor|Factor Name
+|---|:---:|:--:|:---:|
+1|13.6|X22|profit on operating activities / total assets 
+2|13.8|X21|sales (n) / sales (n-1)
+3|15.2|X35|profit on sales / total assets 
+4|17.2|X46|(current assets - inventory) / short-term liabilities 
+5|17.8|X24|gross profit (in 3 years) / total assets 
+6|18.0|X29|logarithm of total assets   
+7|19.8|X25|(equity - share capital) / total assets
+8|21.0|X33|operating expenses / short-term liabilities   
+9|21.2|X51|sales / total assets   
+10|21.8|X38|constant capital / total assets  
+
+*Forth Year(Forcasting bankruptcy after 2 years)  
+
+NO|Mean rank|Factor|Factor Name
+|---|:---:|:--:|:---:|
+1|14.0|X46|(current assets - inventory) / short-term liabilities
+2|16.8|X34|operating expenses / total liabilities  
+3|16.8|X40|(current assets - inventory - receivables) / short-term liabilities 
+4|17.2|X9|sales / total assets
+5|18.8|X36|total sales / total assets
+6|21.2|X29|logarithm of total assets   
+7|22.6|X58|total costs /total sales
+8|23.0|X4|current assets / short-term liabilities 
+9|25.4|X56|(sales - cost of products sold) / sales  
+10|25.6|X26|(net profit + depreciation) / total liabilities  
+
+*Fifth Year(Forcasting bankruptcy after 1 years)  
+
+NO|Mean rank|Factor|Factor Name
+|---|:---:|:--:|:---:|
+1|14.0|X21|sales (n) / sales (n-1) 
+2|16.6|X38|constant capital / total assets
+3|17.6|X46|(current assets - inventory) / short-term liabilities
+4|19.6|X40|(current assets - inventory - receivables) / short-term liabilities 
+5|20.2|X29|logarithm of total assets  
+6|22.0|X35|profit on sales / total assets 
+7|23.6|X50|short-term liabilities / total assets  
+8|24.2|X4|current assets / short-term liabilities 
+9|24.4|X41|total liabilities / ((profit on operating activities + depreciation) * (12/365)) 
+10|24.6|X25|(equity - share capital) / total assets  
+
 
 ## Reference
 Zieba, M., Tomczak, S. K., & Tomczak, J. M. (2016). Ensemble Boosted Trees with Synthetic Features Generation in Application to Bankruptcy Prediction. Expert Systems with Applications.
