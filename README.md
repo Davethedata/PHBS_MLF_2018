@@ -104,7 +104,11 @@ I run each method and get the rank of each variable respectively.Then I calculat
 
 Since our dataset have 5 files,our main result also have 5 tables.The 5 files(tables) are different from forecasing years.For instance，the file(table) named 'first year' is using the first year's dependent variable to forecasting bankruptcy after 5 years.We think this have a long-term bankruptcy sense in this file.Conversely,the file named 5 year have a short-term bankruptcy sense.
 
-For each table,we display the top 10 ranking features for each year.
+For each table,we display the top 5 ranking features for each year.
+
+### Absolute result
+
+In this part,we just see the absolute mean rank of each feature.
 
 * First Year(Forecasting bankruptcy after 5 years)  
 
@@ -115,11 +119,7 @@ NO|Mean rank|Factor|Factor Name
 3|17.0|X18|gross profit / total assets 
 4|17.6|X38|constant capital / total assets
 5|17.6|X7|EBIT / total assets
-6|19.0|X14|(gross profit + interest) / total assets
-7|20.4|X9|sales / total assets 
-8|20.8|X3|working capital / total assets 
-9|21.4|X11|(gross profit + extraordinary items + financial expenses) / total assets   
-10|22.0|X6|retained earnings / total assets  
+
 
 * Second Year(Forecasting bankruptcy after 4 years)  
 
@@ -130,11 +130,7 @@ NO|Mean rank|Factor|Factor Name
 3|17.2|X54|constant capital / fixed assets 
 4|19.4|X20|(inventory * 365) / sales 
 5|19.4|X46|(current assets - inventory) / short-term liabilities
-6|20.8|X44|(receivables * 365) / sales 
-7|21.6|X33|operating expenses / short-term liabilities
-8|23.2|x24|gross profit (in 3 years) / total assets
-9|23.6|x53|equity / fixed assets 
-10|23.8|X34|operating expenses / total liabilities  
+
 
 * Third Year(Forecasting bankruptcy after 3 years)  
 
@@ -145,11 +141,7 @@ NO|Mean rank|Factor|Factor Name
 3|15.2|X35|profit on sales / total assets 
 4|17.2|X46|(current assets - inventory) / short-term liabilities 
 5|17.8|X24|gross profit (in 3 years) / total assets 
-6|18.0|X29|logarithm of total assets   
-7|19.8|X25|(equity - share capital) / total assets
-8|21.0|X33|operating expenses / short-term liabilities   
-9|21.2|X51|sales / total assets   
-10|21.8|X38|constant capital / total assets  
+
 
 * Forth Year(Forecasting bankruptcy after 2 years)  
 
@@ -160,11 +152,7 @@ NO|Mean rank|Factor|Factor Name
 3|16.8|X40|(current assets - inventory - receivables) / short-term liabilities 
 4|17.2|X9|sales / total assets
 5|18.8|X36|total sales / total assets
-6|21.2|X29|logarithm of total assets   
-7|22.6|X58|total costs /total sales
-8|23.0|X4|current assets / short-term liabilities 
-9|25.4|X56|(sales - cost of products sold) / sales  
-10|25.6|X26|(net profit + depreciation) / total liabilities  
+
 
 * Fifth Year(Forecasting bankruptcy after 1 years)  
 
@@ -175,16 +163,70 @@ NO|Mean rank|Factor|Factor Name
 3|17.6|X46|(current assets - inventory) / short-term liabilities
 4|19.6|X40|(current assets - inventory - receivables) / short-term liabilities 
 5|20.2|X29|logarithm of total assets  
-6|22.0|X35|profit on sales / total assets 
-7|23.6|X50|short-term liabilities / total assets  
-8|24.2|X4|current assets / short-term liabilities 
-9|24.4|X41|total liabilities / ((profit on operating activities + depreciation) * (12/365)) 
-10|24.6|X25|(equity - share capital) / total assets  
+ 
 
    * Total asset are the most important feature.We can see in 5 years' ranking table.Almost 80% important features contains total asset,which indicate that total asset is important feature in predicting long-term and short-term bankruptcy.
    * Sales starts to show significance from second year.
    * Short-term liabilities start to show importance from the third year.The Third is a line between long-term predicting and short-term predicting. Therefore,we think short-term liabilities are important in predicting a short-time bankruptcy. 
-   
+
+### Relative ranking（using standard error to standardize)
+
+we let the absolute mean rank times its standard error to get the relative rank of each feature.
+
+* First Year(Forecasting bankruptcy after 5 years)  
+
+NO|Mean rank|Factor|Factor Name
+|---|:---:|:--:|:---:|
+1|41.1|X29|
+2|132.3|X4|
+3|166.7|X40|
+4|172.2|X34|
+5|174.4|X9|
+
+
+* Second Year(Forecasting bankruptcy after 4 years)  
+
+NO|Mean rank|Factor|Factor Name
+|---|:---:|:--:|:---:|
+1|132.1|X16|
+2|144.5|X29|
+3|163.7|X58|
+4|174.1|X26|
+5|207.4|X54|
+
+
+* Third Year(Forecasting bankruptcy after 3 years)  
+
+NO|Mean rank|Factor|Factor Name
+|---|:---:|:--:|:---:|
+1|71.1|X16|
+2|106.2|X29
+3|186.9|X33
+4|203.9|X26
+5|216.5|X36
+
+
+* Forth Year(Forecasting bankruptcy after 2 years)  
+
+NO|Mean rank|Factor|Factor Name
+|---|:---:|:--:|:---:|
+1|90.7|X46
+2|95.3|X59
+3|103.2|X36
+4|104.9|X4
+5|123.6|X40
+
+
+* Fifth Year(Forecasting bankruptcy after 1 years)  
+
+NO|Mean rank|Factor|Factor Name
+|---|:---:|:--:|:---:|
+1|0.9|X29
+2|1.01|X35
+3|1.08|X39
+4|1.21|X56
+5|1.23|X46
+
 ## Shortcomings
    * Ranking is a relative value rather than an absolute value.This model might ignore some variables which have an unique predicting power on some special forecasting years  
    
