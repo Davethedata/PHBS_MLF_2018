@@ -93,10 +93,10 @@ X64	sales / fixed assets
    In python,we can use feature_importance from RandonRorest to get the decreasing impurity directly.(https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier)
    
    #### Recursive feature elimination (RFE)
-     Recursive Feature Elimination (or RFE) removes recursively features and builds a model on those features that remain. It uses the model estimated accuracy to identify which feature (or combination of features) contribute the most and rank them.
+   Recursive Feature Elimination (or RFE) removes recursively features and builds a model on those features that remain. It uses the model estimated accuracy to identify which feature (or combination of features) contribute the most and rank them.
      
-     For this method used in python, you may check:
-     https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html
+   For this method used in python, you may check:
+   https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html
      
 I run each method and get the rank of each variable respectively.Then I calculate the average rank for these 5 methods for all indenpendent variables.The rank for each variable in each method is ranging from 1 to 64.The smaller the rank is,the more important the feature is.
 
