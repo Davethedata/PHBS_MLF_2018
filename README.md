@@ -182,8 +182,8 @@ NO|Mean rank|Factor|Factor Name
 10|24.6|X25|(equity - share capital) / total assets  
 
    * Total asset are the most important feature.We can see in 5 years' ranking table.Almost 80% important features contains total asset,which indicate that total asset is important feature in predicting long-term and short-term bankruptcy.
-   * Sales starts to show significance from second year
-   * short-term liabilities are important in predicting a short-time bankruptcy  
+   * Sales starts to show significance from second year.
+   * Short-term liabilities start to show importance from the third year.The Third is a line between long-term predicting and short-term predicting. Therefore,we think short-term liabilities are important in predicting a short-time bankruptcy. 
    
 ## Shortcomings
    * Ranking is a relative value rather than an absolute value.This model might ignore some variables which have an unique predicting power on some special forecasting years  
