@@ -10,70 +10,72 @@ https://archive.ics.uci.edu/ml/datasets/Polish+companies+bankruptcy+data#   （U
 This dataset have 5 files and they are different from each other in the starting forecasting years.For example,"1st Year.csv" contains financial rates from 1st year of the forecasting period and corresponding class label that indicates bankruptcy status after 5 years. The data contains 7027 instances (financial statements), 271 represents bankrupted companies, 6756 firms that did not bankrupt in the forecasting period.   
 This is a classification problem so that the dependent variable is a binary variable.Class "1" represents the bankrupt company.We have 64 independent variables deriving from financial statement.The indenpedent variables are listed as follow:  
 
-X1	net profit / total assets  
-X2	total liabilities / total assets  
-X3	working capital / total assets   
-X4	current assets / short-term liabilities   
-X5	[(cash + short-term securities + receivables - short-term liabilities) / (operating expenses - depreciation)] * 365   
-X6	retained earnings / total assets   
-X7	EBIT / total assets    
-X8	book value of equity / total liabilities   
-X9	sales / total assets   
-X10	equity / total assets  
-X11	(gross profit + extraordinary items + financial expenses) / total assets   
-X12	gross profit / short-term liabilities   
-X13	(gross profit + depreciation) / sales   
-X14	(gross profit + interest) / total assets   
-X15	(total liabilities * 365) / (gross profit + depreciation)   
-X16	(gross profit + depreciation) / total liabilities   
-X17	total assets / total liabilities   
-X18	gross profit / total assets   
-X19	gross profit / sales   
-X20	(inventory * 365) / sales   
-X21	sales (n) / sales (n-1)   
-X22	profit on operating activities / total assets   
-X23	net profit / sales   
-X24	gross profit (in 3 years) / total assets   
-X25	(equity - share capital) / total assets   
-X26	(net profit + depreciation) / total liabilities   
-X27	profit on operating activities / financial expenses   
-X28	working capital / fixed assets   
-X29	logarithm of total assets   
-X30	(total liabilities - cash) / sales   
-X31	(gross profit + interest) / sales   
-X32	(current liabilities * 365) / cost of products sold    
-X33	operating expenses / short-term liabilities   
-X34	operating expenses / total liabilities   
-X35	profit on sales / total assets   
-X36	total sales / total assets   
-X37	(current assets - inventories) / long-term liabilities   
-X38	constant capital / total assets   
-X39	profit on sales / sales   
-X40	(current assets - inventory - receivables) / short-term liabilities   
-X41	total liabilities / ((profit on operating activities + depreciation) * (12/365))   
-X42	profit on operating activities / sales   
-X43	rotation receivables + inventory turnover in days   
-X44	(receivables * 365) / sales   
-X45	net profit / inventory   
-X46	(current assets - inventory) / short-term liabilities   
-X47	(inventory * 365) / cost of products sold   
-X48	EBITDA (profit on operating activities - depreciation) / total assets   
-X49	EBITDA (profit on operating activities - depreciation) / sales   
-X50	current assets / total liabilities   
-X51	short-term liabilities / total assets   
-X52	(short-term liabilities * 365) / cost of products sold)   
-X53	equity / fixed assets   
-X54	constant capital / fixed assets   
-X55	working capital   
-X56	(sales - cost of products sold) / sales   
-X57	(current assets - inventory - short-term liabilities) / (sales - gross profit - depreciation)   
-X58	total costs /total sales   
-X59	long-term liabilities / equity   
-X60	sales / inventory   
-X61	sales / receivables   
-X62	(short-term liabilities *365) / sales   
-X63	sales / short-term liabilities   
-X64	sales / fixed assets  
+NO.|Factor Name
+|:---:|:---:|
+X1|net profit / total assets  
+X2|total liabilities / total assets  
+X3|working capital / total assets   
+X4|current assets / short-term liabilities   
+X5|[(cash + short-term securities + receivables - short-term liabilities) / (operating expenses - depreciation)] * 365   
+X6|retained earnings / total assets   
+X7|EBIT / total assets    
+X8|book value of equity / total liabilities   
+X9|sales / total assets   
+X10|equity / total assets  
+X11|(gross profit + extraordinary items + financial expenses) / total assets   
+X12|gross profit / short-term liabilities   
+X13|(gross profit + depreciation) / sales   
+X14|(gross profit + interest) / total assets   
+X15|(total liabilities * 365) / (gross profit + depreciation)   
+X16|(gross profit + depreciation) / total liabilities   
+X17|total assets / total liabilities   
+X18|gross profit / total assets   
+X19|gross profit / sales   
+X20|(inventory * 365) / sales   
+X21|sales (n) / sales (n-1)   
+X22|profit on operating activities / total assets   
+X23|net profit / sales   
+X24|gross profit (in 3 years) / total assets   
+X25|(equity - share capital) / total assets   
+X26|(net profit + depreciation) / total liabilities   
+X27|profit on operating activities / financial expenses   
+X28|working capital / fixed assets   
+X29|logarithm of total assets   
+X30|(total liabilities - cash) / sales   
+X31|(gross profit + interest) / sales   
+X32|(current liabilities * 365) / cost of products sold    
+X33|operating expenses / short-term liabilities   
+X34|operating expenses / total liabilities   
+X35|profit on sales / total assets   
+X36|total sales / total assets   
+X37|(current assets - inventories) / long-term liabilities   
+X38|constant capital / total assets   
+X39|profit on sales / sales   
+X40|(current assets - inventory - receivables) / short-term liabilities   
+X41|total liabilities / ((profit on operating activities + depreciation) * (12/365))   
+X42|profit on operating activities / sales   
+X43|rotation receivables + inventory turnover in days   
+X44|(receivables * 365) / sales   
+X45|net profit / inventory   
+X46|(current assets - inventory) / short-term liabilities   
+X47|(inventory * 365) / cost of products sold   
+X48|EBITDA (profit on operating activities - depreciation) / total assets   
+X49|EBITDA (profit on operating activities - depreciation) / sales   
+X50|current assets / total liabilities   
+X51|short-term liabilities / total assets   
+X52|(short-term liabilities * 365) / cost of products sold)   
+X53|equity / fixed assets   
+X54|constant capital / fixed assets   
+X55|working capital   
+X56|(sales - cost of products sold) / sales   
+X57|(current assets - inventory - short-term liabilities) / (sales - gross profit - depreciation)   
+X58|total costs /total sales   
+X59|long-term liabilities / equity   
+X60|sales / inventory   
+X61|sales / receivables   
+X62|(short-term liabilities *365) / sales   
+X63|sales / short-term liabilities   
+X64|sales / fixed assets  
 
 ## Features Selection
    
@@ -112,8 +114,8 @@ In this part,we just see the absolute mean rank of each feature.
 
 * First Year(Forecasting bankruptcy after 5 years)  
 
-NO|Mean rank|Factor|Factor Name
-|---|:---:|:--:|:---:|
+NO.|Mean rank|Factor|Factor Name
+|:---:|:---:|:--:|:---:|
 1|12.6|X29|logarithm of total assets  
 2|16.4|X34|operating expenses / total liabilities  
 3|17.0|X18|gross profit / total assets 
@@ -123,8 +125,8 @@ NO|Mean rank|Factor|Factor Name
 
 * Second Year(Forecasting bankruptcy after 4 years)  
 
-NO|Mean rank|Factor|Factor Name
-|---|:---:|:--:|:---:|
+NO.|Mean rank|Factor|Factor Name
+|:---:|:---:|:--:|:---:|
 1|15.6|X29|logarithm of total assets  
 2|15.8|X58|total costs /total sales   
 3|17.2|X54|constant capital / fixed assets 
@@ -134,8 +136,8 @@ NO|Mean rank|Factor|Factor Name
 
 * Third Year(Forecasting bankruptcy after 3 years)  
 
-NO|Mean rank|Factor|Factor Name
-|---|:---:|:--:|:---:|
+NO.|Mean rank|Factor|Factor Name
+|:---:|:---:|:--:|:---:|
 1|13.6|X22|profit on operating activities / total assets 
 2|13.8|X21|sales (n) / sales (n-1)
 3|15.2|X35|profit on sales / total assets 
@@ -145,8 +147,8 @@ NO|Mean rank|Factor|Factor Name
 
 * Forth Year(Forecasting bankruptcy after 2 years)  
 
-NO|Mean rank|Factor|Factor Name
-|---|:---:|:--:|:---:|
+NO.|Mean rank|Factor|Factor Name
+|:---:|:---:|:--:|:---:|
 1|14.0|X46|(current assets - inventory) / short-term liabilities
 2|16.8|X34|operating expenses / total liabilities  
 3|16.8|X40|(current assets - inventory - receivables) / short-term liabilities 
@@ -156,8 +158,8 @@ NO|Mean rank|Factor|Factor Name
 
 * Fifth Year(Forecasting bankruptcy after 1 years)  
 
-NO|Mean rank|Factor|Factor Name
-|---|:---:|:--:|:---:|
+NO.|Mean rank|Factor|Factor Name
+|:---:|:---:|:--:|:---:|
 1|14.0|X21|sales (n) / sales (n-1) 
 2|16.6|X38|constant capital / total assets
 3|17.6|X46|(current assets - inventory) / short-term liabilities
@@ -167,65 +169,68 @@ NO|Mean rank|Factor|Factor Name
 
    * Total asset are the most important feature.We can see in 5 years' ranking table.Almost 80% important features contains total asset,which indicate that total asset is important feature in predicting long-term and short-term bankruptcy.
    * Sales starts to show significance from second year.
-   * Short-term liabilities start to show importance from the third year.The Third is a line between long-term predicting and short-term predicting. Therefore,we think short-term liabilities are important in predicting a short-time bankruptcy. 
+   * Short-term liabilities start to show importance from the third year.The Third is a line between long-term predicting and short-term predicting. Therefore,we think short-term liabilities are important in predicting a short-time bankruptcy.   
+   
+   
 
 ### Relative ranking（using standard error to standardize)
+
 
 we let the absolute mean rank times its standard error to get the relative rank of each feature.
 
 * First Year(Forecasting bankruptcy after 5 years)  
 
-NO|Mean rank|Factor|Factor Name
-|---|:---:|:--:|:---:|
-1|41.1|X29|
-2|132.3|X4|
-3|166.7|X40|
-4|172.2|X34|
-5|174.4|X9|
+NO.|Mean rank|Factor|Factor Name
+|:---:|:---:|:--:|:---:|
+1|41.1|X29|logarithm of total assets
+2|132.3|X4|current assets / short-term liabilities 
+3|166.7|X40|(current assets - inventory - receivables) / short-term liabilities
+4|172.2|X34|operating expenses / total liabilities  
+5|174.4|X9|sales / total assets
 
 
 * Second Year(Forecasting bankruptcy after 4 years)  
 
-NO|Mean rank|Factor|Factor Name
-|---|:---:|:--:|:---:|
-1|132.1|X16|
-2|144.5|X29|
-3|163.7|X58|
-4|174.1|X26|
-5|207.4|X54|
+NO.|Mean rank|Factor|Factor Name
+|:---:|:---:|:--:|:---:|
+1|132.1|X16|(gross profit + depreciation) / total liabilities 
+2|144.5|X29|logarithm of total assets   
+3|163.7|X58|total costs /total sales
+4|174.1|X26|(net profit + depreciation) / total liabilities
+5|207.4|X54|constant capital / fixed assets
 
 
 * Third Year(Forecasting bankruptcy after 3 years)  
 
-NO|Mean rank|Factor|Factor Name
-|---|:---:|:--:|:---:|
-1|71.1|X16|
-2|106.2|X29
-3|186.9|X33
-4|203.9|X26
-5|216.5|X36
+NO.|Mean rank|Factor|Factor Name
+|:---:|:---:|:--:|:---:|
+1|71.1|X16|(net profit + depreciation) / total liabilities
+2|106.2|X29|logarithm of total assets
+3|186.9|X33|operating expenses / short-term liabilities 
+4|203.9|X26|(net profit + depreciation) / total liabilities
+5|216.5|X36|total sales / total assets 
 
 
 * Forth Year(Forecasting bankruptcy after 2 years)  
 
-NO|Mean rank|Factor|Factor Name
-|---|:---:|:--:|:---:|
-1|90.7|X46
-2|95.3|X59
-3|103.2|X36
-4|104.9|X4
-5|123.6|X40
+NO.|Mean rank|Factor|Factor Name
+|:---:|:---:|:--:|:---:|
+1|90.7|X46|(current assets - inventory) / short-term liabilities
+2|95.3|X59|long-term liabilities / equity
+3|103.2|X36|total sales / total assets
+4|104.9|X4|current assets / short-term liabilities
+5|123.6|X40|(current assets - inventory - receivables) / short-term liabilities
 
 
 * Fifth Year(Forecasting bankruptcy after 1 years)  
 
-NO|Mean rank|Factor|Factor Name
-|---|:---:|:--:|:---:|
-1|0.9|X29
-2|1.01|X35
-3|1.08|X39
-4|1.21|X56
-5|1.23|X46
+NO.|Mean rank|Factor|Factor Name
+|:---:|:---:|:--:|:---:|
+1|0.9|X29|logarithm of total assets 
+2|1.01|X35|profit on sales / total assets 
+3|1.08|X39|profit on sales / sales
+4|1.21|X56|(sales - cost of products sold) / sales
+5|1.23|X46|(current assets - inventory) / short-term liabilities
 
 ## Shortcomings
    * Ranking is a relative value rather than an absolute value.This model might ignore some variables which have an unique predicting power on some special forecasting years  
