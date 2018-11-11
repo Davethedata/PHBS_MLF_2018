@@ -75,19 +75,36 @@ X62	(short-term liabilities *365) / sales
 X63	sales / short-term liabilities   
 X64	sales / fixed assets  
 
-## Features Selection(importance)
+## Features Selection
    
    64 independent variables have different influence on firm's bankruptcy.I want to detect the importance of each variable.
    
 ### Selection Method
-   * Pearson Correlation(Univariate feature selection,Based on F-statistic)
-   * Logistic model and regularization(Based on the absolute value of coefficients)  
-   * Random Forest feature importance(Based on mean decrease impurity)  
-   * Recursive feature elimination (RFE)
-
-I run each method and get the rank of each variable respectively.Then I calculate the average rank for all indenpendent variables.
+   #### Pearson Correlation
+   In statistics, the Pearson correlation coefficient is a measure of the linear correlation between two variables X（independent variable) and Y(dependent variable). It has a value between +1 and −1, where 1 is total positive linear correlation, 0 is no linear correlation, and −1 is total negative linear correlation.The closer absolute value of correlation coeffecient is equal to one, the more important the independent variable is.
+   In python,we just use method f_regression(OLS) or f_classi(classification model) from sklearn.feature_selection to calculate them. 
+   
+   #### Logistic model and regularization
+   Since this is a classification problem,we use logistic model instead of OLS with regularization L1 and L2.The reason we use regularization is that regularization automatically punish insignificant features so that the coeffecient of these features are equal to zero after the regression.And the rest significant features are ordered by the absolute value of their coeffecients.
+   
+   #### Random Forest feature importance(Based on mean decrease impurity)
+   Random forest consists of a number of decision trees. Every node in the decision trees is a condition on a single feature, designed to split the dataset into two so that similar response values end up in the same set. The measure based on which the (locally) optimal condition is chosen is called impurity. For classification, it is typically either Gini impurity or information gain/entropy and for regression trees it is variance. Thus when training a tree, it can be computed how much each feature decreases the weighted impurity in a tree. For a forest, the impurity decrease from each feature can be averaged and the features are ranked according to this measure.
+   
+   In python,we can use feature_importance from RandonRorest to get the decreasing impurity directly.(https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier)
+   
+   #### Recursive feature elimination (RFE)
+     Recursive Feature Elimination (or RFE) removes recursively features and builds a model on those features that remain. It uses the model estimated accuracy to identify which feature (or combination of features) contribute the most and rank them.
+     
+     For this method used in python, you may check:
+     https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html
+     
+I run each method and get the rank of each variable respectively.Then I calculate the average rank for these 5 methods for all indenpendent variables.The rank for each variable in each method is ranging from 1 to 64.The smaller the rank is,the more important the feature is.
 
 ## Main Result
+
+Since our dataset have 5 files,our main result also have 5 tables.The 5 files(tables) are different from forecasing years.For instance，the file(table) named 'first year' is using the first year's dependent variable to forecasting bankruptcy after 5 years.We think this have a long-term bankruptcy sense in this file.Conversely,the file named 5 year have a short-term bankruptcy sense.
+
+For each table,we display the top 10 ranking features for each year.
 
 * First Year(Forecasting bankruptcy after 5 years)  
 
@@ -164,7 +181,7 @@ NO|Mean rank|Factor|Factor Name
 9|24.4|X41|total liabilities / ((profit on operating activities + depreciation) * (12/365)) 
 10|24.6|X25|(equity - share capital) / total assets  
 
-   * Total asset are the most important feature  
+   * Total asset are the most important feature.We can see in 5 years' ranking table.Almost 80% important features contains total asset,which indicate that total asset is important feature in predicting long-term and short-term bankruptcy.
    * Sales starts to show significance from second year
    * short-term liabilities are important in predicting a short-time bankruptcy  
    
