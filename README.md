@@ -233,12 +233,12 @@ NO.|Mean rank|Factor|Factor Name
 5|1.23|X46|(current assets - inventory) / short-term liabilities
 
 After we standardize the absolute rank,we find that:
-      * Total asset is still significantly important in predicting bankruptcy for long-term and short-term.
-      * Sales' importance tends to diminish after the standardization
-      * short-term liabilities is still important in predicting short-term bankruptcy and tends to play an role in long-term bankruptcy
-      * It seems that total liabilities is also important. 
+      * Total asset is still significantly important in predicting bankruptcy for long-term and short-term.  
+      * Sales' importance tends to diminish after the standardization.  
+      * short-term liabilities is still important in predicting short-term bankruptcy and tends to play an role in long-term bankruptcy.  
+      * It seems that total liabilities is also important.   
 ## Shortcomings
-   * Ranking is a relative value rather than an absolute value.This model might ignore some variables which have an unique predicting power on some special forecasting years  
+   * Ranking is a relative value rather than an absolute value.This model might ignore some variables which have an unique predicting power on some special forecasting years    
    
 ## Reference
 Zieba, M., Tomczak, S. K., & Tomczak, J. M. (2016). Ensemble Boosted Trees with Synthetic Features Generation in Application to Bankruptcy Prediction. Expert Systems with Applications.
