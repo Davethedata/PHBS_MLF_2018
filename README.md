@@ -108,7 +108,7 @@ Since our dataset have 5 files,our main result also have 5 tables.The 5 files(ta
 
 For each table,we display the top 5 ranking features for each year.
 
-### Absolute result
+### Absolute rank
 
 In this part,we just see the absolute mean rank of each feature.
 
@@ -173,7 +173,7 @@ NO.|Mean rank|Factor|Factor Name
    
    
 
-### Relative ranking（using standard error to standardize)
+### Relative rank（using standard error to standardize)
 
 
 we let the absolute mean rank times its standard error to get the relative rank of each feature.
@@ -232,6 +232,11 @@ NO.|Mean rank|Factor|Factor Name
 4|1.21|X56|(sales - cost of products sold) / sales
 5|1.23|X46|(current assets - inventory) / short-term liabilities
 
+After we standardize the absolute rank,we find that:
+      * Total asset is still significantly important in predicting bankruptcy for long-term and short-term.
+      * Sales' importance tends to diminish after the standardization
+      * short-term liabilities is still important in predicting short-term bankruptcy and tends to play an role in long-term bankruptcy
+      * It seems that total liabilities is also important. 
 ## Shortcomings
    * Ranking is a relative value rather than an absolute value.This model might ignore some variables which have an unique predicting power on some special forecasting years  
    
